@@ -1,0 +1,6 @@
+{
+	"name": "integrationRuntimewithmysql",
+	"properties": {
+		"type": "SelfHosted"
+	}
+}

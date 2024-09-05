@@ -1,0 +1,9 @@
+{
+	"name": "adf-hect-demo-01",
+	"location": "canadaeast",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "638f7dde-dfc8-4eb3-b645-8755424b88f7",
+		"tenantId": "57d276ee-57f7-4b08-9fcd-f5b3888c5c93"
+	}
+}

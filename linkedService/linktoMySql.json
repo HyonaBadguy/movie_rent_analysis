@@ -1,0 +1,30 @@
+{
+	"name": "linktoMySql",
+	"type": "Microsoft.DataFactory/factories/linkedservices",
+	"properties": {
+		"description": "Connecto to remote db",
+		"annotations": [],
+		"type": "MySql",
+		"typeProperties": {
+			"server": "LAPTOP-2H38U2BD",
+			"port": 3306,
+			"database": "sakila",
+			"username": "hect",
+			"sslMode": 1,
+			"useSystemTrustStore": 0,
+			"password": {
+				"type": "AzureKeyVaultSecret",
+				"store": {
+					"referenceName": "AzureKeyVault1",
+					"type": "LinkedServiceReference"
+				},
+				"secretName": "PassSql"
+			},
+			"driverVersion": "v2"
+		},
+		"connectVia": {
+			"referenceName": "integrationRuntimewithmysql",
+			"type": "IntegrationRuntimeReference"
+		}
+	}
+}
